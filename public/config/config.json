@@ -1,18 +1,18 @@
 {
-  "CONTRACT_ADDRESS": "0x80553dd097510a093bf46fa7d216936e528805d2",
-  "SCAN_LINK": "https://scope.klaytn.com/nft/0x80553dd097510a093bf46fa7d216936e528805d2?tabId=nftTransfer",
+  "CONTRACT_ADDRESS": "0x67bf6ca7aefa5cf800140cf81675c4d09f8ef341",
+  "SCAN_LINK": "https://scope.klaytn.com/nft/0x67bf6ca7aefa5cf800140cf81675c4d09f8ef341?tabId=nftTransfer",
   "NETWORK": {
     "NAME": "Klaytn Mainnet",
     "SYMBOL": "KLAY",
     "ID": 8217
   },
-  "NFT_NAME": "Gold Spoon Bronze V1",
-  "SYMBOL": "GSBV",
+  "NFT_NAME": "Bronze Spoon NFT V1",
+  "SYMBOL": "BSNV1",
   "MAX_SUPPLY": 10000,
   "WEI_COST": 1000000000000000000,
   "DISPLAY_COST": 1,
   "GAS_LIMIT": 285000,
   "MARKETPLACE": "Opeansea",
-  "MARKETPLACE_LINK": "https://opensea.io/collection/gold-spoon-bronze-v1",
+  "MARKETPLACE_LINK": "https://opensea.io/collection/bronze-spoon-nft-v1",
   "SHOW_BACKGROUND": true
 }
