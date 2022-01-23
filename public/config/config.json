@@ -1,6 +1,6 @@
 {
   "CONTRACT_ADDRESS": "0x80553dd097510a093bf46fa7d216936e528805d2",
-  "SCAN_LINK": "https://scope.klaytn.com/nft/0xecba87b1b03b39f2cd25194f30847df50be60c42?tabId=nftTransfer",
+  "SCAN_LINK": "https://scope.klaytn.com/nft/0x80553dd097510a093bf46fa7d216936e528805d2?tabId=nftTransfer",
   "NETWORK": {
     "NAME": "Klaytn Mainnet",
     "SYMBOL": "KLAY",
