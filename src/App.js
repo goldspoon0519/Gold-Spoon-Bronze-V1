@@ -249,13 +249,13 @@ function App() {
             >
               <StyledButton
                 onClick={(e) => {
-                  window.open("/config/roadmap.pdf", "_blank");
+                  window.open("https://medium.com/@goldspoon0519/%EA%B8%88%EC%88%98%EC%A0%80-%EB%A7%8C%EB%93%A4%EA%B8%B0-nft-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-c2afc5a9ddc7", "_blank");
                 }}
                 style={{
                   margin: "5px",
                 }}
               >
-                Roadmap
+                NFT소개
               </StyledButton>
               <StyledButton
                 style={{
@@ -320,7 +320,7 @@ function App() {
                         getData();
                       }}
                     >
-                      CONNECT
+                      지갑연결
                     </StyledButton>
                     {blockchain.errorMsg !== "" ? (
                       <>
