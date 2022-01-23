@@ -199,7 +199,7 @@ function App() {
         flex={1}
         ai={"center"}
         style={{ padding: 24, backgroundColor: "var(--primary)" }}
-        image={CONFIG.SHOW_BACKGROUND ? "/config/images/bg.png" : null}
+        image={CONFIG.SHOW_BACKGROUND ? "/config/images/bg.jpg" : null}
       >
         <a href={CONFIG.MARKETPLACE_LINK}>
           <StyledLogo alt={"logo"} src={"/config/images/logo.png"} />
@@ -291,14 +291,14 @@ function App() {
                 <s.TextTitle
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
-                  1 {CONFIG.SYMBOL} costs {CONFIG.DISPLAY_COST}{" "}
+                  1 {CONFIG.SYMBOL} 당 가격은 {CONFIG.DISPLAY_COST}{" "}
                   {CONFIG.NETWORK.SYMBOL}.
                 </s.TextTitle>
                 <s.SpacerXSmall />
                 <s.TextDescription
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
-                  Excluding gas fees.
+                  민팅을 시작합니다.
                 </s.TextDescription>
                 <s.SpacerSmall />
                 {blockchain.account === "" ||
@@ -310,7 +310,7 @@ function App() {
                         color: "var(--accent-text)",
                       }}
                     >
-                      Connect to the {CONFIG.NETWORK.NAME} network
+                      메타마스크 지갑 {CONFIG.NETWORK.NAME} 으로 설정해주세요.
                     </s.TextDescription>
                     <s.SpacerSmall />
                     <StyledButton
@@ -414,9 +414,9 @@ function App() {
               color: "var(--primary-text)",
             }}
           >
-            Please make sure you are connected to the right network (
-            {CONFIG.NETWORK.NAME} Mainnet) and the correct address. Please note:
-            Once you make the purchase, you cannot undo this action.
+            메타마스크 자갑에서 올바른 네트워크  (
+            {CONFIG.NETWORK.NAME} Mainnet) 를 선택해주세요. 주의사항:
+            민팅 성공 후 이 거래는 블록체인 특성상 취소 될 수 없습니다.
           </s.TextDescription>
           <s.SpacerSmall />
           <s.TextDescription
