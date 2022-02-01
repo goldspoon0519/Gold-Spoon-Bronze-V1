@@ -255,7 +255,7 @@ function App() {
                   margin: "5px",
                 }}
               >
-                프로젝트 소개
+                소개
               </StyledButton>
               <StyledButton
                 style={{
