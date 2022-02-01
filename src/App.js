@@ -199,7 +199,7 @@ function App() {
         flex={1}
         ai={"center"}
         style={{ padding: 24, backgroundColor: "var(--primary)" }}
-        image={CONFIG.SHOW_BACKGROUND ? "/config/images/bg.jpg" : null}
+        image={CONFIG.SHOW_BACKGROUND ? "/config/images/bg.png" : null}
       >
         <a href={CONFIG.MARKETPLACE_LINK}>
           <StyledLogo alt={"logo"} src={"/config/images/logo.png"} />
@@ -249,13 +249,13 @@ function App() {
             >
               <StyledButton
                 onClick={(e) => {
-                  window.open("https://medium.com/@goldspoon0519/%EA%B8%88%EC%88%98%EC%A0%80-%EB%A7%8C%EB%93%A4%EA%B8%B0-nft-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-c2afc5a9ddc7", "_blank");
+                  window.open("/config/roadmap.pdf", "_blank");
                 }}
                 style={{
                   margin: "5px",
                 }}
               >
-                NFT소개
+                프로젝트 소개
               </StyledButton>
               <StyledButton
                 style={{
@@ -274,7 +274,7 @@ function App() {
                 <s.TextTitle
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
-                  The sale has ended.
+                  판매가 종료되었습니다.
                 </s.TextTitle>
                 <s.TextDescription
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
@@ -291,14 +291,14 @@ function App() {
                 <s.TextTitle
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
-                  1 {CONFIG.SYMBOL} 당 가격은 {CONFIG.DISPLAY_COST}{" "}
+                  1 {CONFIG.SYMBOL} costs {CONFIG.DISPLAY_COST}{" "}
                   {CONFIG.NETWORK.SYMBOL}.
                 </s.TextTitle>
                 <s.SpacerXSmall />
                 <s.TextDescription
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
-                  민팅을 시작합니다.
+                  Excluding gas fees.
                 </s.TextDescription>
                 <s.SpacerSmall />
                 {blockchain.account === "" ||
@@ -310,7 +310,7 @@ function App() {
                         color: "var(--accent-text)",
                       }}
                     >
-                      메타마스크 지갑 {CONFIG.NETWORK.NAME} 으로 설정해주세요.
+                      {CONFIG.NETWORK.NAME} 으로 연결해주세요.
                     </s.TextDescription>
                     <s.SpacerSmall />
                     <StyledButton
@@ -414,9 +414,9 @@ function App() {
               color: "var(--primary-text)",
             }}
           >
-            메타마스크 자갑에서 올바른 네트워크  (
-            {CONFIG.NETWORK.NAME} Mainnet) 를 선택해주세요. 주의사항:
-            민팅 성공 후 이 거래는 블록체인 특성상 취소 될 수 없습니다.
+            올바른 네트워크를 꼭 지정해주세요. (
+            {CONFIG.NETWORK.NAME} Mainnet) 으로 설정 되어있는지 확인해주세요. 경고:
+            잘 못된 주소로 민팅을 완료했을 경우 되돌릴 수 없습니다.
           </s.TextDescription>
           <s.SpacerSmall />
           <s.TextDescription

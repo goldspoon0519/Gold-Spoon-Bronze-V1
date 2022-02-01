@@ -1,18 +1,18 @@
 {
-  "CONTRACT_ADDRESS": "0x67bf6ca7aefa5cf800140cf81675c4d09f8ef341",
-  "SCAN_LINK": "https://scope.klaytn.com/nft/0x67bf6ca7aefa5cf800140cf81675c4d09f8ef341?tabId=nftTransfer",
+  "CONTRACT_ADDRESS": "0xc0443dde3382db98193827f6c0351bbf788b3057",
+  "SCAN_LINK": "https://scope.klaytn.com/nft/0xc0443dde3382db98193827f6c0351bbf788b3057?tabId=nftTransfer",
   "NETWORK": {
     "NAME": "Klaytn Mainnet",
     "SYMBOL": "KLAY",
     "ID": 8217
   },
-  "NFT_NAME": "Bronze Spoon NFT V1",
-  "SYMBOL": "BSNV1",
+  "NFT_NAME": "Rich Polar Bear_Bronze",
+  "SYMBOL": "RPBB",
   "MAX_SUPPLY": 10000,
-  "WEI_COST": 10000000000000000,
-  "DISPLAY_COST": 0.01,
+  "WEI_COST": 1000000000000000000,
+  "DISPLAY_COST": 1,
   "GAS_LIMIT": 285000,
   "MARKETPLACE": "Opeansea",
-  "MARKETPLACE_LINK": "https://opensea.io/collection/bronze-spoon-nft-v1",
+  "MARKETPLACE_LINK": "https://opensea.io/collection/rich-polar-bear-bronze",
   "SHOW_BACKGROUND": true
 }
