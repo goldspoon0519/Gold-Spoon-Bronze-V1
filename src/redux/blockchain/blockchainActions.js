@@ -48,8 +48,8 @@ export const connect = () => {
       },
     });
     const CONFIG = await configResponse.json();
-    const { ethereum } = window;
-    const metamaskIsInstalled = ethereum && ethereum.klaytn;
+    const { ethereum } = window['klaytn'];
+    const metamaskIsInstalled = typeof window.klaytn !== 'undefined';
     if (metamaskIsInstalled) {
       Web3EthContract.setProvider(ethereum);
       let web3 = new Web3(ethereum);
