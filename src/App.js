@@ -332,7 +332,6 @@ function App() {
                     >
                       지갑연결
                     </StyledButton>
-                    <button className="sc-jrAFXE bIjutE" onClick={myFunction}>CONNECT Kaikas </button>
                     {blockchain.errorMsg !== "" ? (
                       <>
                         <s.SpacerSmall />
