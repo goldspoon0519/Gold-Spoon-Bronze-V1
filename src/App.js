@@ -101,7 +101,7 @@ function App() {
       klaytn.enable()
     }
     else {
-      alert('please install kaikas ')
+      alert('please install Metamask ')
     }
   }
 
@@ -149,13 +149,13 @@ function App() {
       })
       .once("error", (err) => {
         console.log(err);
-        setFeedback("Sorry, something went wrong please try again later.");
+        setFeedback("죄송합니다. 알수 없는 오류가 발생했습니다. 나중에 다시 시도해주세요.");
         setClaimingNft(false);
       })
       .then((receipt) => {
         console.log(receipt);
         setFeedback(
-          `WOW, the ${CONFIG.NFT_NAME} is yours! go visit Opensea.io to view it.`
+          `와우, 이제 ${CONFIG.NFT_NAME} 는 당신의 거에요! 잠시 후 오픈씨에서 확인 할 수 있습니다.`
         );
         setClaimingNft(false);
         dispatch(fetchData(blockchain.account));
@@ -259,13 +259,13 @@ function App() {
             >
               <StyledButton
                 onClick={(e) => {
-                  window.open("/config/roadmap.pdf", "_blank");
+                  window.open("https://bit.ly/3BjEvkZ", "_blank");
                 }}
                 style={{
                   margin: "5px",
                 }}
               >
-                프로젝트 소개
+                소개
               </StyledButton>
               <StyledButton
                 style={{
@@ -398,7 +398,7 @@ function App() {
                           getData();
                         }}
                       >
-                        {claimingNft ? "BUSY" : "BUY"}
+                        {claimingNft ? "처리중" : "구입"}
                       </StyledButton>
                     </s.Container>
                   </>
