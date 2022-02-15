@@ -109,7 +109,7 @@ function App() {
   const blockchain = useSelector((state) => state.blockchain);
   const data = useSelector((state) => state.data);
   const [claimingNft, setClaimingNft] = useState(false);
-  const [feedback, setFeedback] = useState(`Click buy to mint your NFT.`);
+  const [feedback, setFeedback] = useState(`Click buy to mint your NFT. 수량을 정하고 구입버튼을 클릭 후 민팅 해주세요.`);
   const [mintAmount, setMintAmount] = useState(1);
   const [CONFIG, SET_CONFIG] = useState({
     CONTRACT_ADDRESS: "",
@@ -149,13 +149,13 @@ function App() {
       })
       .once("error", (err) => {
         console.log(err);
-        setFeedback("죄송합니다. 알수 없는 오류가 발생했습니다. 나중에 다시 시도해주세요.");
+        setFeedback("sorry. An error has occurred. please try again. 죄송합니다. 알수 없는 오류가 발생했습니다. 나중에 다시 시도해주세요.");
         setClaimingNft(false);
       })
       .then((receipt) => {
         console.log(receipt);
         setFeedback(
-          `와우, 이제 ${CONFIG.NFT_NAME} 는 당신의 거에요! 잠시 후 오픈씨에서 확인 할 수 있습니다.`
+          `와우, 이제 ${CONFIG.NFT_NAME} 는 당신의 거에요! 잠시 후 Opensea 에서 확인 할 수 있습니다.`
         );
         setClaimingNft(false);
         dispatch(fetchData(blockchain.account));
@@ -265,7 +265,7 @@ function App() {
                   margin: "5px",
                 }}
               >
-                소개
+                Road Map
               </StyledButton>
               <StyledButton
                 style={{
@@ -301,14 +301,14 @@ function App() {
                 <s.TextTitle
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
-                  1 {CONFIG.SYMBOL} costs {CONFIG.DISPLAY_COST}{" "}
+                  1 {CONFIG.SYMBOL} 당 가격 {CONFIG.DISPLAY_COST}{" "}
                   {CONFIG.NETWORK.SYMBOL}.
                 </s.TextTitle>
                 <s.SpacerXSmall />
                 <s.TextDescription
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
-                  Excluding gas fees.
+                  Excluding gas fees.가스비를 제외한 가격.
                 </s.TextDescription>
                 <s.SpacerSmall />
                 {blockchain.account === "" ||
@@ -330,7 +330,7 @@ function App() {
                         getData();
                       }}
                     >
-                      지갑연결
+                      지갑연결/Connect Wallet
                     </StyledButton>
                     {blockchain.errorMsg !== "" ? (
                       <>
@@ -398,7 +398,7 @@ function App() {
                           getData();
                         }}
                       >
-                        {claimingNft ? "처리중" : "구입"}
+                        {claimingNft ? "처리중/Busy" : "구입/Buy"}
                       </StyledButton>
                     </s.Container>
                   </>
