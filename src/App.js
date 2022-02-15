@@ -308,7 +308,7 @@ function App() {
                 <s.TextDescription
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
-                  Excluding gas fees.가스비를 제외한 가격.
+                  Excluding gas fees/ 가스비를 제외한 가격
                 </s.TextDescription>
                 <s.SpacerSmall />
                 {blockchain.account === "" ||
@@ -320,7 +320,7 @@ function App() {
                         color: "var(--accent-text)",
                       }}
                     >
-                      {CONFIG.NETWORK.NAME} 으로 연결해주세요.
+                      Connect {CONFIG.NETWORK.NAME} 으로 연결해주세요.
                     </s.TextDescription>
                     <s.SpacerSmall />
                     <StyledButton
@@ -330,7 +330,7 @@ function App() {
                         getData();
                       }}
                     >
-                      지갑연결/Connect Wallet
+                      지갑연결/Wallet
                     </StyledButton>
                     {blockchain.errorMsg !== "" ? (
                       <>
