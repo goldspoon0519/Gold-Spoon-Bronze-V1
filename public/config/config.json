@@ -1,13 +1,13 @@
 {
-  "CONTRACT_ADDRESS": "0xc0443dde3382db98193827f6c0351bbf788b3057",
-  "SCAN_LINK": "https://scope.klaytn.com/nft/0xc0443dde3382db98193827f6c0351bbf788b3057?tabId=nftTransfer",
+  "CONTRACT_ADDRESS": "0xe91d7bf519613fff73eb0a04a259dc26d42f5927",
+  "SCAN_LINK": "https://scope.klaytn.com/nft/0xe91d7bf519613fff73eb0a04a259dc26d42f5927?tabId=nftTransfer",
   "NETWORK": {
     "NAME": "Klaytn Mainnet",
     "SYMBOL": "KLAY",
     "ID": 8217
   },
-  "NFT_NAME": "Rich Polar Bear_Bronze",
-  "SYMBOL": "RPBB",
+  "NFT_NAME": "Rich Polar Bear_Bronze_V2",
+  "SYMBOL": "RPBBV2",
   "MAX_SUPPLY": 10000,
   "WEI_COST": 1000000000000000000,
   "DISPLAY_COST": 1,
