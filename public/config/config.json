@@ -1,18 +1,18 @@
 {
-  "CONTRACT_ADDRESS": "0xe9ac5764143599e0ba8a895b11865db587fee292",
-  "SCAN_LINK": "https://scope.klaytn.com/nft/0xe9ac5764143599e0ba8a895b11865db587fee292?tabId=nftTransfer",
+  "CONTRACT_ADDRESS": "0x818a2558be4b0f1c85b7e8964c08834aa6603b73",
+  "SCAN_LINK": "https://scope.klaytn.com/nft/0x818a2558be4b0f1c85b7e8964c08834aa6603b73?tabId=nftTransfer",
   "NETWORK": {
     "NAME": "Klaytn Mainnet",
     "SYMBOL": "KLAY",
     "ID": 8217
   },
-  "NFT_NAME": "V5_Rich Polar Bear_Bronze",
+  "NFT_NAME": "V6_Rich Polar Bear_Bronze",
   "SYMBOL": "RPBBV5",
   "MAX_SUPPLY": 10000,
   "WEI_COST": 1000000000000000000,
   "DISPLAY_COST": 1,
   "GAS_LIMIT": 285000,
   "MARKETPLACE": "Opeansea",
-  "MARKETPLACE_LINK": "https://opensea.io/collection/v5-rich-polar-bear-bronze",
+  "MARKETPLACE_LINK": "https://opensea.io/collection/v6-rich-polar-bear-bronze",
   "SHOW_BACKGROUND": true
 }
