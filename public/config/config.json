@@ -1,18 +1,18 @@
 {
-  "CONTRACT_ADDRESS": "0x818a2558be4b0f1c85b7e8964c08834aa6603b73",
-  "SCAN_LINK": "https://scope.klaytn.com/nft/0x818a2558be4b0f1c85b7e8964c08834aa6603b73?tabId=nftTransfer",
+  "CONTRACT_ADDRESS": "0xB1C722b782dc4DeDdDF734b2cff66A5360698112",
+  "SCAN_LINK": "https://mumbai.polygonscan.com/tx/0x6ec05dbb6a1f8b3ecbb688d3dca95bf9ea3bd67c171d4798f3e5d108130de8d4",
   "NETWORK": {
-    "NAME": "Klaytn Mainnet",
-    "SYMBOL": "KLAY",
+    "NAME": "Polygon Mumbai",
+    "SYMBOL": "MATIC",
     "ID": 8217
   },
-  "NFT_NAME": "V6_Rich Polar Bear_Bronze",
-  "SYMBOL": "RPBBV6",
+  "NFT_NAME": "Test Bear Mumbai",
+  "SYMBOL": "TBMV",
   "MAX_SUPPLY": 10000,
   "WEI_COST": 1000000000000000000,
   "DISPLAY_COST": 1,
   "GAS_LIMIT": 285000,
   "MARKETPLACE": "Opeansea",
-  "MARKETPLACE_LINK": "https://opensea.io/collection/v6-rich-polar-bear-bronze",
+  "MARKETPLACE_LINK": "https://testnets.opensea.io/collection/test-bear-mumbai",
   "SHOW_BACKGROUND": true
 }
