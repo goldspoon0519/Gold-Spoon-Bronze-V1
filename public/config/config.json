@@ -1,18 +1,18 @@
 {
-  "CONTRACT_ADDRESS": "0xB1C722b782dc4DeDdDF734b2cff66A5360698112",
-  "SCAN_LINK": "https://mumbai.polygonscan.com/tx/0x6ec05dbb6a1f8b3ecbb688d3dca95bf9ea3bd67c171d4798f3e5d108130de8d4",
+  "CONTRACT_ADDRESS": "0x235D0FDb23b11C8605d161ED5f3Ac5E808B3f24d",
+  "SCAN_LINK": "https://polygonscan.com/token/0x235d0fdb23b11c8605d161ed5f3ac5e808b3f24d",
   "NETWORK": {
-    "NAME": "Polygon Mumbai",
+    "NAME": "Polygon",
     "SYMBOL": "MATIC",
-    "ID": 80001
+    "ID": 137
   },
-  "NFT_NAME": "Test Bear Mumbai",
-  "SYMBOL": "TBMV",
+  "NFT_NAME": "V7_Rich Polar Bear_Bronze",
+  "SYMBOL": "PRPBBV77",
   "MAX_SUPPLY": 10000,
   "WEI_COST": 1000000000000000000,
   "DISPLAY_COST": 1,
   "GAS_LIMIT": 285000,
   "MARKETPLACE": "Opeansea",
-  "MARKETPLACE_LINK": "https://testnets.opensea.io/collection/test-bear-mumbai",
+  "MARKETPLACE_LINK": "https://opensea.io/collection/v7-rich-polar-bear-bronze",
   "SHOW_BACKGROUND": true
 }
