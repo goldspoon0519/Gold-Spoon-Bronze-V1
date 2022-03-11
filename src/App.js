@@ -95,21 +95,11 @@ export const StyledLink = styled.a`
 `;
 
 function App() {
-  const myFunction = () => {
-    if (window.klaytn !== 'undefined') {
-      
-      klaytn.enable()
-    }
-    else {
-      alert('please install Metamask ')
-    }
-  }
-
   const dispatch = useDispatch();
   const blockchain = useSelector((state) => state.blockchain);
   const data = useSelector((state) => state.data);
   const [claimingNft, setClaimingNft] = useState(false);
-  const [feedback, setFeedback] = useState(`Click buy to mint your NFT. 수량을 정하고 구입버튼을 클릭 후 민팅 해주세요.`);
+  const [feedback, setFeedback] = useState(`Click buy to mint your NFT.`);
   const [mintAmount, setMintAmount] = useState(1);
   const [CONFIG, SET_CONFIG] = useState({
     CONTRACT_ADDRESS: "",
@@ -149,13 +139,13 @@ function App() {
       })
       .once("error", (err) => {
         console.log(err);
-        setFeedback("sorry. An error has occurred. please try again. 죄송합니다. 알수 없는 오류가 발생했습니다. 나중에 다시 시도해주세요.");
+        setFeedback("Sorry, something went wrong please try again later.");
         setClaimingNft(false);
       })
       .then((receipt) => {
         console.log(receipt);
         setFeedback(
-          `와우, 이제 ${CONFIG.NFT_NAME} 는 당신의 거에요! 잠시 후 Opensea 에서 확인 할 수 있습니다.`
+          `WOW, the ${CONFIG.NFT_NAME} is yours! go visit Opensea.io to view it.`
         );
         setClaimingNft(false);
         dispatch(fetchData(blockchain.account));
@@ -259,13 +249,13 @@ function App() {
             >
               <StyledButton
                 onClick={(e) => {
-                  window.open("https://bit.ly/3BjEvkZ", "_blank");
+                  window.open("/config/roadmap.pdf", "_blank");
                 }}
                 style={{
                   margin: "5px",
                 }}
               >
-                Road Map
+                Roadmap
               </StyledButton>
               <StyledButton
                 style={{
@@ -284,7 +274,7 @@ function App() {
                 <s.TextTitle
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
-                  판매가 종료되었습니다.
+                  The sale has ended.
                 </s.TextTitle>
                 <s.TextDescription
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
@@ -301,18 +291,18 @@ function App() {
                 <s.TextTitle
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
-                  1 {CONFIG.SYMBOL} 당 가격 {CONFIG.DISPLAY_COST}{" "}
+                  1 {CONFIG.SYMBOL} costs {CONFIG.DISPLAY_COST}{" "}
                   {CONFIG.NETWORK.SYMBOL}.
                 </s.TextTitle>
                 <s.SpacerXSmall />
                 <s.TextDescription
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
-                  Excluding gas fees/ 가스비를 제외한 가격
+                  Excluding gas fees.
                 </s.TextDescription>
                 <s.SpacerSmall />
                 {blockchain.account === "" ||
-                  blockchain.smartContract === null ? (
+                blockchain.smartContract === null ? (
                   <s.Container ai={"center"} jc={"center"}>
                     <s.TextDescription
                       style={{
@@ -320,7 +310,7 @@ function App() {
                         color: "var(--accent-text)",
                       }}
                     >
-                      Connect {CONFIG.NETWORK.NAME} 으로 연결해주세요.
+                      Connect to the {CONFIG.NETWORK.NAME} network
                     </s.TextDescription>
                     <s.SpacerSmall />
                     <StyledButton
@@ -330,7 +320,7 @@ function App() {
                         getData();
                       }}
                     >
-                      Connect
+                      CONNECT
                     </StyledButton>
                     {blockchain.errorMsg !== "" ? (
                       <>
@@ -398,7 +388,7 @@ function App() {
                           getData();
                         }}
                       >
-                        {claimingNft ? "처리중/Busy" : "구입/Buy"}
+                        {claimingNft ? "BUSY" : "BUY"}
                       </StyledButton>
                     </s.Container>
                   </>
@@ -424,9 +414,9 @@ function App() {
               color: "var(--primary-text)",
             }}
           >
-            올바른 네트워크를 꼭 지정해주세요. (
-            {CONFIG.NETWORK.NAME} Mainnet) 으로 설정 되어있는지 확인해주세요. 경고:
-            잘 못된 주소로 민팅을 완료했을 경우 되돌릴 수 없습니다.
+            Please make sure you are connected to the right network (
+            {CONFIG.NETWORK.NAME} Mainnet) and the correct address. Please note:
+            Once you make the purchase, you cannot undo this action.
           </s.TextDescription>
           <s.SpacerSmall />
           <s.TextDescription
