@@ -2,15 +2,15 @@
   "CONTRACT_ADDRESS": "0xf28e391d5237f420e7b5f272d3c0aa1c9fea9d78",
   "SCAN_LINK": "https://baobab.scope.klaytn.com/tx/0xdfc8cddc97c9c4529661f635a2d898fb5427868ad45ef294553976556f247c31?tabId=nftTransfer",
   "NETWORK": {
-    "NAME": " Baobab",
+    "NAME": " klaytn baobob",
     "SYMBOL": "KLAY",
     "ID": 1001
   },
   "NFT_NAME": "Klay Pixel MFers",
   "SYMBOL": "KPMFERS",
   "MAX_SUPPLY": 10000,
-  "WEI_COST": 10000000000000000,
-  "DISPLAY_COST": 0.01,
+  "WEI_COST": 1000000000000000000,
+  "DISPLAY_COST": 1,
   "GAS_LIMIT": 17100000,
   "MARKETPLACE": "Opeansea",
   "MARKETPLACE_LINK": "https://testnets.opensea.io/collection/klay-pixel-mfers-test",
