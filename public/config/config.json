@@ -11,7 +11,7 @@
   "MAX_SUPPLY": 10000,
   "WEI_COST": 1000000000000000000,
   "DISPLAY_COST": 1,
-  "GAS_LIMIT": 17100000,
+  "GAS_LIMIT": 100000,
   "MARKETPLACE": "Opeansea",
   "MARKETPLACE_LINK": "https://testnets.opensea.io/collection/klay-pixel-mfers-test",
   "SHOW_BACKGROUND": true
