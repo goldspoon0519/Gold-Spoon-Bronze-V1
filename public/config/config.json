@@ -1,18 +1,18 @@
 {
-  "CONTRACT_ADDRESS": "0x235D0FDb23b11C8605d161ED5f3Ac5E808B3f24d",
-  "SCAN_LINK": "https://polygonscan.com/token/0x235d0fdb23b11c8605d161ed5f3ac5e808b3f24d",
+  "CONTRACT_ADDRESS": "0xf28e391d5237f420e7b5f272d3c0aa1c9fea9d78",
+  "SCAN_LINK": "https://baobab.scope.klaytn.com/",
   "NETWORK": {
-    "NAME": "Polygon",
-    "SYMBOL": "MATIC",
-    "ID": 137
+    "NAME": " Klaytn Baobab",
+    "SYMBOL": "KLAY",
+    "ID": 1001
   },
-  "NFT_NAME": "V7_Rich Polar Bear_Bronze",
-  "SYMBOL": "PRPBBV77",
+  "NFT_NAME": "Klay Pixel MFers",
+  "SYMBOL": "KPMFERS",
   "MAX_SUPPLY": 10000,
-  "WEI_COST": 1000000000000000000,
-  "DISPLAY_COST": 1,
+  "WEI_COST": 10000000000000000,
+  "DISPLAY_COST": 0.01,
   "GAS_LIMIT": 285000,
   "MARKETPLACE": "Opeansea",
-  "MARKETPLACE_LINK": "https://opensea.io/collection/v7-rich-polar-bear-bronze",
+  "MARKETPLACE_LINK": "https://testnets.opensea.io/collection/klay-pixel-mfers-test",
   "SHOW_BACKGROUND": true
 }
